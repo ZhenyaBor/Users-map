@@ -2,7 +2,7 @@ import { useDeferredValue, useMemo, useTransition } from 'react';
 import { type LatLngTuple } from 'leaflet';
 import { MapContainer, TileLayer } from 'react-leaflet';
 import { useUsers } from '../../hooks/useUsers';
-import UsersLayer from './UsersLayer';
+import UsersLayer from '../UsersLayer/UsersLayer';
 import './index.css';
 
 type UsersMapProps = {
