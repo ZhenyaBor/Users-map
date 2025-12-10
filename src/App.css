@@ -1,0 +1,92 @@
+ :root {
+   color: #0f172a;
+   background-color: #f8fafc;
+   font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+     sans-serif;
+ }
+
+ body {
+   background-color: #f8fafc;
+   color: #0f172a;
+   min-height: 100vh;
+ }
+
+ .app {
+   display: flex;
+   flex-direction: column;
+   min-height: 100vh;
+   gap: 12px;
+   padding: 16px;
+ }
+
+ .app__header {
+   display: grid;
+   grid-template-columns: 2fr 1fr;
+   gap: 16px;
+   align-items: end;
+   background: #ffffff;
+   border: 1px solid #e2e8f0;
+   border-radius: 12px;
+   padding: 16px 20px;
+   box-shadow: 0 4px 14px rgba(15, 23, 42, 0.08);
+ }
+
+ .eyebrow {
+   letter-spacing: 0.08em;
+   text-transform: uppercase;
+   font-size: 12px;
+   font-weight: 700;
+   color: #475569;
+   margin-bottom: 4px;
+ }
+
+ h1 {
+   font-size: 26px;
+   line-height: 1.2;
+   margin: 0 0 6px;
+ }
+
+ .subtitle {
+   color: #475569;
+   max-width: 640px;
+ }
+
+ .filter {
+   display: flex;
+   flex-direction: column;
+   gap: 6px;
+   font-weight: 600;
+   color: #1e293b;
+ }
+
+ .filter input {
+   width: 100%;
+   padding: 12px 14px;
+   border: none;
+   border-radius: 10px;
+   outline: none;
+   box-shadow: 0 0px 6px rgba(0, 0, 0, 0.10);
+   transition: border-color 160ms ease, box-shadow 160ms ease;
+ }
+
+ .filter input:focus {
+   border-color: #0f766e;
+   box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.25);
+ }
+
+ .app__map {
+   flex: 1;
+   background: #ffffff;
+   border: 1px solid #e2e8f0;
+   border-radius: 12px;
+   box-shadow: 0 8px 30px rgba(15, 23, 42, 0.08);
+   overflow: hidden;
+   position: relative;
+   display: flex;
+ }
+
+ @media (max-width: 960px) {
+   .app__header {
+     grid-template-columns: 1fr;
+   }
+ }
